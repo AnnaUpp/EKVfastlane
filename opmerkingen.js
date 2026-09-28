@@ -53,7 +53,7 @@
     modeBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
     modeBtn.textContent = on ? 'Klik op een onderdeel…' : 'Reageren';
   }
-  modeBtn.addEventListener('click', function () { if (!getName()) { openPanel(); flash('Vul eerst je naam in.', true); return; } setMode(!active); });
+  modeBtn.addEventListener('click', function () { if (!getName()) { openPanel(); flash('Vul eerst je naam in en klik dan op "Of klik op een onderdeel", of typ een opmerking over de hele pagina.', true); var n = panel.querySelector('#op-naam'); if (n) n.focus(); return; } setMode(!active); });
 
   /* 3. Klikken in reactiemodus */
   document.addEventListener('click', function (e) {
@@ -158,6 +158,8 @@
       '<header><h3>Opmerkingen</h3><button type="button" class="op-btn sec op-close">Sluiten</button></header>' +
       '<div class="op-body">' +
       '<div style="display:flex;flex-direction:column;gap:6px"><label for="op-naam" style="font-size:13px;font-weight:700">Je naam</label><input id="op-naam" type="text" placeholder="Voor- en achternaam" value="' + esc(getName()) + '"></div>' +
+      '<div style="display:flex;flex-direction:column;gap:6px;background:#F2F9FD;padding:12px"><label for="op-page" style="font-size:13px;font-weight:700">Opmerking over deze pagina</label><textarea id="op-page" rows="3" placeholder="Typ hier je opmerking"></textarea>' +
+      '<div class="op-row"><button type="button" class="op-btn op-addpage">Toevoegen</button><button type="button" class="op-btn sec op-pick">Of klik op een onderdeel</button></div></div>' +
       '<div class="op-tabs"><button type="button" data-s="page" aria-pressed="' + (scope === 'page') + '">Deze pagina</button><button type="button" data-s="all" aria-pressed="' + (scope === 'all') + '">Alle pagina\'s (' + comments.length + ')</button></div>' +
       (list.length ? list.map(function (c) {
         return '<div class="op-item' + (c.own ? '' : ' op-other') + '" data-id="' + c.id + '">' +
@@ -176,6 +178,17 @@
 
     panel.querySelector('.op-close').onclick = closePanel;
     panel.querySelector('#op-naam').oninput = function (e) { setName(e.target.value.trim()); };
+    panel.querySelector('.op-addpage').onclick = function () {
+      var ta = panel.querySelector('#op-page'); var t = ta.value.trim();
+      if (!getName()) { flash('Vul eerst je naam in.', true); panel.querySelector('#op-naam').focus(); return; }
+      if (!t) { ta.focus(); return; }
+      comments.push({ id: uid(), cid: page + ':pagina', page: page, pageTitle: pageTitle, label: 'Hele pagina', text: t, naam: getName(), ts: Date.now(), sent: false, own: true });
+      save(comments); render(); flash('Toegevoegd. Klik op Verstuur als je klaar bent.');
+    };
+    panel.querySelector('.op-pick').onclick = function () {
+      if (!getName()) { flash('Vul eerst je naam in.', true); panel.querySelector('#op-naam').focus(); return; }
+      closePanel(); setMode(true);
+    };
     Array.prototype.forEach.call(panel.querySelectorAll('.op-tabs button'), function (b) { b.onclick = function () { scope = b.getAttribute('data-s'); renderPanel(); }; });
     Array.prototype.forEach.call(panel.querySelectorAll('.op-item'), function (it) {
       var c = comments.filter(function (x) { return x.id === it.getAttribute('data-id'); })[0];
