@@ -27,7 +27,7 @@ details{border-bottom:1px solid #E5E5E5;padding:18px 0}
 summary{font-size:18px;font-weight:700;cursor:pointer}
 details p{font-size:17px;line-height:1.6;margin-top:10px}
 </style>
-<link rel="stylesheet" href="assets/opmerkingen.css">
+<link rel="stylesheet" href="opmerkingen.css">
 </head>
 <body>
 <div style="max-width: 1440px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; background: #ffffff; position: relative; overflow: hidden;">
@@ -45,7 +45,7 @@ details p{font-size:17px;line-height:1.6;margin-top:10px}
 <a href="certificering.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0; border-bottom: 3px solid transparent;">Certificering</a>
 <a href="opdrachtgevers.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0; border-bottom: 3px solid transparent;">Opdrachtgevers</a>
 <a href="achtergrond.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0; border-bottom: 3px solid transparent;">Achtergrond</a>
-<a href="#contact" style="text-decoration: none; color: #1D1D1B; padding: 12px 0;">Contact</a>
+<a href="contact.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0;">Contact</a>
 <button aria-label="Zoeken" style="width: 44px; height: 44px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #1D1D1B;">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
 </button>
@@ -136,7 +136,7 @@ details p{font-size:17px;line-height:1.6;margin-top:10px}
 <p style="font-size: 17px; line-height: 1.6;">Heb je een concreet project en wil je de Fast Lane toepassen? Meld je aan. We nemen binnen [termijn] contact op.</p>
 <span style="font-size: 15px; color: #4A5054;">Contactpersoon gemeenten: [naam], [e-mailadres]</span>
 </div>
-<a href="#" class="btn">Aanmelden als koploper</a>
+<a href="contact.html?onderwerp=koploper" class="btn">Aanmelden als koploper</a>
 </section>
 </main>
 </div>
@@ -165,7 +165,8 @@ details p{font-size:17px;line-height:1.6;margin-top:10px}
 <span style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #676D71;">Contact</span>
 <span>[e-mailadres team EKV Fast Lane]</span>
 <span>[telefoonnummer]</span>
-<a href="#nieuwsbrief" style="color: #0072A8; font-weight: 700; text-decoration: none;">Aanmelden voor de nieuwsbrief</a>
+<a href="contact.html" style="color: #0072A8; font-weight: 700; text-decoration: none;">Contactformulier</a>
+<a href="index.html#nieuwsbrief" style="color: #0072A8; font-weight: 700; text-decoration: none;">Aanmelden voor de nieuwsbrief</a>
 </div>
 </div>
 <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #E5E5E5; padding-top: 20px; font-size: 14px; color: #676D71;">
@@ -181,6 +182,6 @@ details p{font-size:17px;line-height:1.6;margin-top:10px}
 <form name="opmerkingen" data-netlify="true" netlify-honeypot="bot-field" hidden>
 <input name="bot-field"><input name="naam"><input name="pagina"><input name="onderdeel"><textarea name="opmerking"></textarea><input name="tijd"><input name="id">
 </form>
-<script src="assets/opmerkingen.js"></script>
+<script src="opmerkingen.js"></script>
 </body>
 </html>
