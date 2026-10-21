@@ -41,3 +41,13 @@ Geen build-stap nodig: gewone HTML, CSS en JavaScript.
 - Het nieuwsbriefformulier op Home is een demo en verstuurt niets.
 - Teksten tussen [haken] zijn placeholders. De vouchersectie is bewust geparkeerd.
 - Netlify Forms heeft een gratis maandlimiet op het aantal inzendingen; controleer je plan als er veel wordt gereageerd.
+
+## Versie 18 oktober 2026: beeld en vouchersectie (informatie)
+- Beeld: alle placeholders vervangen door stockfoto's in `img/` (geschaald, 15 Shutterstock-beelden). Overzicht welk beeld waar staat: zie beeldoverzicht in de chat/projectnotitie. Praktijkblokken Ommoord, Parkstad en GMR dragen het label "voorbeeldbeeld" tot er projectfoto's zijn.
+- Vouchers: vouchers.html (overzicht), vouchers-regeling-1 t/m 5.html, vouchers-gemeenten.html, vouchers-voorwaarden.html, vouchers-vragen.html. Geen aanvraagpagina en geen formulieren; die volgen bij de opening.
+- Nieuw Netlify-formulier `vouchers-interesse` (op overzicht, regelingpagina's en gemeentenpagina). Na uploaden: Forms > formulierdetectie opnieuw laten lopen, en bij dit formulier een eigen notificatie-adres instellen.
+- Pagina samen-versnellen.html (probleem, IOP, plek van EKV Fast Lane), IOP-blok op de home, IOP-logo met regel in de footer van elke pagina, menu-item "Waarom".
+- Nog open: logo De Bouwcampus (gestippeld kader; checken of het mag blijven), link privacyverklaring.
+- 18 okt, ronde 2 (opmerkingen Jaap 1 okt): rollen in ketenvolgorde (CI's, bouwers, corporaties & ontwikkelaars, gemeenten) in menu, kaarten en footer; certificering.html alleen CI's en schemabeheerders; kwaliteitsborgers en omgevingsdiensten op gemeenten.html; 2x2 (fase x spoor) bij "Jouw rol" gemeenten; aantoonbaarheid en capaciteit als rode draad; "hybride" vervangen door "gedeeltelijke dekking"; Wkb-nuance (gevolgklasse 1); disclaimer kennisbank; geen nieuwsrubriek, wel nieuwsbrief. Koplopergemeente blijft de term.
+- Let op: gen_vouchers.py en gen_waarom.py nemen header/footer over uit gemeenten.html; apply_jaap.py daarna opnieuw draaien voor de menuvolgorde.
+- 19 okt, eindproduct: reactielaag verwijderd (opmerkingen.js/.css en verborgen formulier), werkversie-meldingen weg, placeholders vervangen, privacy.html toegevoegd, "Algemene voorwaarden". Nieuwsbriefformulier is nu een echt Netlify-formulier (`nieuwsbrief`). Netlify-formulieren: contact, nieuwsbrief, vouchers-interesse; na upload formulierdetectie opnieuw laten lopen. Kennisproducten staan op "Op aanvraag" (contactformulier) tot de bestanden online staan. Bouwcampus-logo is een tekstmerk tot het logobestand er is.
