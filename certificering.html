@@ -28,34 +28,32 @@ h1,h2,h3,p{margin:0}
 details{border-bottom:1px solid #E5E5E5;padding:18px 0}
 summary{font-size:18px;font-weight:700;cursor:pointer}
 details p{font-size:17px;line-height:1.6;margin-top:10px}
+@media (max-width:1320px){header{min-height:0!important;padding:12px 32px!important;flex-wrap:wrap;gap:8px 24px!important}header nav{flex-wrap:wrap;white-space:normal!important;gap:4px 18px!important;justify-content:flex-start}header nav a{padding:8px 0!important}}
+@media (max-width:900px){[style*="grid-template-columns"]{grid-template-columns:1fr!important}[style*="padding: 56px 120px"],[style*="padding: 0 120px"],[style*="padding: 96px 120px"],[style*="padding: 64px 120px"],[style*="padding: 72px 120px"],[style*="padding: 56px 120px 40px"]{padding-left:20px!important;padding-right:20px!important}h1{font-size:34px!important}aside.side{display:none!important}footer>div:last-child{flex-wrap:wrap;gap:16px}}
 </style>
-<link rel="stylesheet" href="opmerkingen.css">
 </head>
 <body>
 <div style="max-width: 1440px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; background: #ffffff; position: relative; overflow: hidden;">
-<header style="width: 100%; min-height: 96px; box-sizing: border-box; padding: 0 64px; display: flex; align-items: center; justify-content: space-between; background: #ffffff; border-bottom: 1px solid #E5E5E5; font-family: 'Avenir Next', 'AvenirNextRegular', Figtree, 'Segoe UI', sans-serif; color: #1D1D1B;">
+<header style="width: 100%; min-height: 96px; box-sizing: border-box; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; background: #ffffff; border-bottom: 1px solid #E5E5E5; font-family: 'Avenir Next', 'AvenirNextRegular', Figtree, 'Segoe UI', sans-serif; color: #1D1D1B;">
 <a href="index.html" style="display: flex; align-items: center; gap: 20px; text-decoration: none; color: #1D1D1B;">
-<div style="width: 132px; height: 48px; border: 1.5px dashed #9AA3A8; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #676D71; text-align: center; line-height: 1.2;">[logo De Bouwcampus]</div>
+<div style="display: flex; flex-direction: column; line-height: 1; padding-right: 20px; border-right: 1px solid #E5E5E5;"><span style="font-size: 11px; letter-spacing: 0.14em; color: #676D71; font-weight: 700;">DE</span><span style="font-size: 18px; font-weight: 700; color: #1D1D1B; letter-spacing: 0.02em;">BOUWCAMPUS</span></div>
 <div style="display: flex; flex-direction: column; gap: 2px;">
-<span style="font-size: 22px; font-weight: 700; color: #009EE0; letter-spacing: -0.01em;">EKV Fast Lane</span>
-<span style="font-size: 13px; color: #676D71;">Sneller bouwen met erkende kwaliteitsverklaringen</span>
+<span style="font-size: 22px; font-weight: 700; color: #009EE0; letter-spacing: -0.01em; white-space: nowrap;">EKV Fast Lane</span>
 </div>
 </a>
-<nav aria-label="Hoofdmenu" style="display: flex; align-items: center; gap: 28px; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;">
-<a href="gemeenten.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0; border-bottom: 3px solid transparent;">Gemeenten</a>
-<a href="conceptaanbieders.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0; border-bottom: 3px solid transparent;">Conceptaanbieders</a>
+<nav aria-label="Hoofdmenu" style="display: flex; align-items: center; gap: 20px; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; white-space: nowrap;">
+<a href="samen-versnellen.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0; border-bottom: 3px solid transparent;">Samen versnellen</a>
 <a href="certificering.html" style="text-decoration: none; color: #0072A8; padding: 12px 0; border-bottom: 3px solid #009EE0;">Certificering</a>
+<a href="conceptaanbieders.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0; border-bottom: 3px solid transparent;">Conceptaanbieders</a>
 <a href="opdrachtgevers.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0; border-bottom: 3px solid transparent;">Opdrachtgevers</a>
+<a href="gemeenten.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0; border-bottom: 3px solid transparent;">Gemeenten</a>
+<a href="vouchers.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0; border-bottom: 3px solid transparent;">Vouchers</a>
 <a href="achtergrond.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0; border-bottom: 3px solid transparent;">Achtergrond</a>
 <a href="contact.html" style="text-decoration: none; color: #1D1D1B; padding: 12px 0;">Contact</a>
-<button aria-label="Zoeken" style="width: 44px; height: 44px; border: 0; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #1D1D1B;">
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
-</button>
 </nav>
 </header>
 
-<section aria-label="Paginabanner" style="position: relative; height: 320px; background: #3E4B53;">
-<span style="position: absolute; left: 24px; bottom: 16px; font-size: 13px; color: #C9D3D9;">[Foto: auditor en bouwer op de bouwplaats]</span>
+<section aria-label="Paginabanner" style="position: relative; height: 320px; background: #3E4B53 url(img-banner-certificering.jpg) center 45% / cover no-repeat;">
 <div style="position: absolute; right: 0; top: 0; width: 420px; height: 320px; background: rgba(0, 158, 224, 0.28); clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
 </section>
 
@@ -63,7 +61,7 @@ details p{font-size:17px;line-height:1.6;margin-top:10px}
 <div style="position: absolute; right: 0; top: 0; width: 480px; height: 900px; background: #F2F9FD; clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
 <aside class="side" style="position: relative; display: flex; flex-direction: column; gap: 4px; align-self: start;">
 <span style="font-size: 14px; color: #676D71; padding: 0 0 12px 14px;"><a href="index.html" style="display: inline; padding: 0; border: 0; font-size: 14px;">Home</a> / Certificering</span>
-<a href="#rol" class="on">Jullie rol</a>
+<a href="#rol" class="on">Je rol</a>
 <a href="#oplevert">Wat het oplevert</a>
 <a href="#aandeslag">Aan de slag</a>
 <a href="#kennis">Kennisproducten</a>
@@ -74,44 +72,45 @@ details p{font-size:17px;line-height:1.6;margin-top:10px}
 
 <main style="position: relative; display: flex; flex-direction: column; gap: 56px; max-width: 860px;">
 <div style="display: flex; flex-direction: column; gap: 10px;">
-<h1 style="font-size: 44px; line-height: 1.15; font-weight: 700; color: #009EE0;">CI's &amp; kwaliteitsborgers</h1>
-<p style="font-size: 28px; line-height: 1.3; font-weight: 700; color: #676D71;">Vertrouwen in de keten organiseren</p>
-<p class="body" style="margin-top: 14px;">Certificerende instellingen en kwaliteitsborgers maken het vertrouwen achter een EKV zichtbaar en overdraagbaar. Zonder jullie beoordeling en borging bestaat er geen Fast Lane.</p>
+<h1 style="font-size: 44px; line-height: 1.15; font-weight: 700; color: #009EE0;">Certificerende instellingen</h1>
+<p style="font-size: 28px; line-height: 1.3; font-weight: 700; color: #676D71;">Aantoonbare kwaliteit mogelijk maken</p>
+<p class="body" style="margin-top: 14px;">Certificerende instellingen en schemabeheerders maken de kwaliteit van een woningconcept aantoonbaar: in een beoordelingsrichtlijn, een certificaat en een openbaar informatiedocument. Zonder dat werk bestaat er geen Fast Lane.</p>
 </div>
 
 <section id="rol" class="sec">
-<h2 class="h2">Jullie rol</h2>
+<h2 class="h2">Je rol</h2>
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;">
-<div style="background: #F8F8F8; padding: 24px; display: flex; flex-direction: column; gap: 10px;"><span class="kick">Certificerende instelling</span><p style="font-size: 17px; line-height: 1.6;">Beoordeelt een woonconcept onder een BRL en geeft het certificaat af. De kwaliteitsverklaring wordt geregistreerd bij de TloKB. De gemeente toetst de gedekte Bbl-eisen dan niet opnieuw.</p></div>
-<div style="background: #F8F8F8; padding: 24px; display: flex; flex-direction: column; gap: 10px;"><span class="kick">Kwaliteitsborger</span><p style="font-size: 17px; line-height: 1.6;">Borgt tijdens de bouw de Bbl-eisen die niet door de EKV gedekt zijn. Hoe groter de dekking van de EKV, hoe gerichter die borging.</p></div>
+<div style="background: #F8F8F8; padding: 24px; display: flex; flex-direction: column; gap: 10px;"><span class="kick">Certificerende instelling</span><p style="font-size: 17px; line-height: 1.6;">Beoordeelt product en proces van een bouwer onder een beoordelingsrichtlijn, geeft het certificaat af en controleert daarna periodiek. Het certificaat wordt geregistreerd bij de TloKB; de gemeente toetst de gedekte Bbl-eisen dan niet opnieuw.</p></div>
+<div style="background: #F8F8F8; padding: 24px; display: flex; flex-direction: column; gap: 10px;"><span class="kick">Schemabeheerder</span><p style="font-size: 17px; line-height: 1.6;">Stelt de beoordelingsrichtlijn op en beheert haar, en biedt haar ter aanwijzing aan bij de TloKB. Vaak dezelfde organisatie als de CI, maar niet altijd. Voor complete gestapelde woningconcepten ontbreken nog richtlijnen; daar zit de eerste stap.</p></div>
 </div>
 </section>
 
 <section id="oplevert" class="sec">
 <h2 class="h2">Wat het oplevert</h2>
-<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;">
-<div style="background: #F8F8F8; padding: 22px; display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 18px; font-weight: 700;">Meer vraag</span><span style="font-size: 16px; line-height: 1.55;">Gemeenten en opdrachtgevers vragen vaker om gecertificeerde concepten.</span></div>
-<div style="background: #F8F8F8; padding: 22px; display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 18px; font-weight: 700;">Eén taal</span><span style="font-size: 16px; line-height: 1.55;">Een gedeeld begrippenkader maakt jullie verklaringen leesbaar voor gemeenten.</span></div>
-<div style="background: #F8F8F8; padding: 22px; display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 18px; font-weight: 700;">Minder dubbel werk</span><span style="font-size: 16px; line-height: 1.55;">Wat één keer is aangetoond, hoeft niet in elk project opnieuw.</span></div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;">
+<div style="background: #F8F8F8; padding: 22px; display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 18px; font-weight: 700;">Certificering op de kaart</span><span style="font-size: 16px; line-height: 1.55;">Gemeenten en opdrachtgevers gaan op een andere manier om certificering vragen: niet als bijlage bij een project, maar als voorwaarde om snel te kunnen vergunnen.</span></div>
+<div style="background: #F8F8F8; padding: 22px; display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 18px; font-weight: 700;">Aantoonbare kwaliteit wordt beloond</span><span style="font-size: 16px; line-height: 1.55;">Een gecertificeerd concept krijgt in de Fast Lane een kortere en voorspelbare route. Daarmee krijgt je werk directe waarde voor de bouwer en de opdrachtgever.</span></div>
+<div style="background: #F8F8F8; padding: 22px; display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 18px; font-weight: 700;">Een proactieve rol</span><span style="font-size: 16px; line-height: 1.55;">De Fast Lane geeft certificerende instellingen de positie om de aantoonbare kwaliteit van de Nederlandse woningbouwproductie te verhogen, in plaats van achteraf te beoordelen wat anderen hebben bedacht.</span></div>
+<div style="background: #F8F8F8; padding: 22px; display: flex; flex-direction: column; gap: 8px;"><span style="font-size: 18px; font-weight: 700;">Meer concepten om te beoordelen</span><span style="font-size: 16px; line-height: 1.55;">Hoe meer concepten met EKV, hoe meer bouwers certificering aanvragen. De stimuleringsregeling geeft daar het eerste duwtje: <a href="vouchers-regeling-1.html">regeling 1</a> voor richtlijnen en <a href="vouchers-regeling-3.html">regeling 3</a> voor afgeronde certificeringen.</span></div>
 </div>
 </section>
 
 <section id="aandeslag" class="sec">
 <h2 class="h2">Aan de slag</h2>
-<div style="display: flex; flex-direction: column; gap: 22px;">
-<div class="step"><span class="num">1</span><div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="font-size: 20px;">BRL's in beeld</h3><p style="font-size: 17px; line-height: 1.6;">Welke beoordelingsrichtlijnen zijn geregistreerd, en waar ontbreekt er een voor complete bouwsystemen?</p></div></div>
-<div class="step"><span class="num">2</span><div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="font-size: 20px;">Gebruik het begrippenkader</h3><p style="font-size: 17px; line-height: 1.6;">Eén set termen voor typegoedkeuring, EKV en kwaliteitsborging, zodat gemeenten weten wat een verklaring dekt.</p></div></div>
-<div class="step"><span class="num">3</span><div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="font-size: 20px;">Plan capaciteit</h3><p style="font-size: 17px; line-height: 1.6;">Meer concepten betekent meer beoordelingen. Laat ons weten waar auditorcapaciteit knelt.</p></div></div>
-<div class="step"><span class="num">4</span><div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="font-size: 20px;">Denk mee</h3><p style="font-size: 17px; line-height: 1.6;">In de expertcommissie EKV adviseren CI's en TloKB over toepasbaarheid en werking. [status: in oprichting]</p></div></div>
+<div style="display: flex; flex-direction: column; gap: 24px;">
+<div class="step"><span class="num">1</span><div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="font-size: 20px;">Richtlijn voor een complete woning</h3><p style="font-size: 17px; line-height: 1.6;">Breng een beoordelingsrichtlijn tot stand die een gestapeld industrieel woningconcept als geheel beoordeelt, aansluit op het Bbl en door meer dan één CI gebruikt kan worden, en bied haar ter aanwijzing aan bij de TloKB.</p></div></div>
+<div class="step"><span class="num">2</span><div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="font-size: 20px;">Betrek bouwers vroeg</h3><p style="font-size: 17px; line-height: 1.6;">Een oriëntatierapport over fabriek en proces brengt bouwers vroeg aan tafel, nog voordat de richtlijn af is. Zo wordt de richtlijn vanaf het begin werkbaar voor de praktijk.</p></div></div>
+<div class="step"><span class="num">3</span><div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="font-size: 20px;">Certificeer en publiceer</h3><p style="font-size: 17px; line-height: 1.6;">Rond de beoordeling af, registreer het certificaat bij de TloKB en publiceer een informatiedocument waarin de prestaties van het concept zijn afgezet tegen de eisen uit het Bbl. Dat document is wat gemeenten en opdrachtgevers lezen.</p></div></div>
+<div class="step"><span class="num">4</span><div style="display: flex; flex-direction: column; gap: 4px;"><h3 style="font-size: 20px;">Denk mee</h3><p style="font-size: 17px; line-height: 1.6;">In de expertcommissie EKV adviseren certificerende instellingen en TloKB over toepasbaarheid en werking. (in oprichting)</p></div></div>
 </div>
 </section>
 
 <section id="kennis" class="sec">
-<h2 class="h2">Kennisproducten voor CI's en kwaliteitsborgers</h2>
+<h2 class="h2">Kennisproducten voor CI's en schemabeheerders</h2>
 <div style="border-top: 1px solid #E5E5E5;">
-<div class="doc"><span style="font-size: 18px; font-weight: 700;">Taal- en begrippenkader kwaliteitsverklaringen</span><span style="font-size: 15px; color: #676D71;">na vaststelling</span><span style="font-size: 15px; color: #676D71;">binnenkort</span></div>
-<div class="doc"><span style="font-size: 18px; font-weight: 700;">Overzicht erkende BRL's en typegoedkeuringen</span><span style="font-size: 15px; color: #676D71;">in ontwikkeling</span><span style="font-size: 15px; color: #676D71;">binnenkort</span></div>
-<div class="doc"><span style="font-size: 18px; font-weight: 700;">Infographic typegoedkeuring en EKV</span><span style="font-size: 15px; color: #676D71;">[versie]</span><a href="#" style="font-weight: 700; text-decoration: none;">Download</a></div>
+<div class="doc"><span style="font-size: 18px; font-weight: 700;">Taal- en begrippenkader kwaliteitsverklaringen</span><span style="font-size: 15px; color: #676D71;">in ontwikkeling</span><a href="index.html#nieuwsbrief" style="font-weight: 700; text-decoration: none;">Interesse? Meld je aan</a></div>
+<div class="doc"><span style="font-size: 18px; font-weight: 700;">Overzicht erkende BRL's en typegoedkeuringen</span><span style="font-size: 15px; color: #676D71;">in ontwikkeling</span><a href="index.html#nieuwsbrief" style="font-weight: 700; text-decoration: none;">Interesse? Meld je aan</a></div>
+<div class="doc"><span style="font-size: 18px; font-weight: 700;">Infographic typegoedkeuring en EKV</span><span style="font-size: 15px; color: #676D71;">actuele versie</span><a href="contact.html?onderwerp=vraag" style="font-weight: 700; text-decoration: none;">Op aanvraag</a></div>
 </div>
 </section>
 
@@ -121,17 +120,16 @@ details p{font-size:17px;line-height:1.6;margin-top:10px}
 <div class="actor" style="border-top: 4px solid #009EE0;"><b>Bouwer</b><span>Levert en laat het concept certificeren</span></div>
 <div class="actor" style="border-top: 4px solid #009EE0;"><b>CI</b><span>Beoordeelt onder BRL, geeft certificaat</span></div>
 <div class="actor" style="border-top: 4px solid #009EE0;"><b>TloKB</b><span>Erkent en registreert</span></div>
-<div class="actor" style="border-top: 4px solid #676D71;"><b>Kwaliteits&shy;borger</b><span>Borgt wat de EKV niet dekt</span></div>
+<div class="actor" style="border-top: 4px solid #676D71;"><b>Kwaliteits&shy;borger</b><span>Borgt tijdens de bouw wat de EKV niet dekt (Wkb, nu gevolgklasse 1)</span></div>
 <div class="actor" style="border-top: 4px solid #676D71;"><b>Gemeente</b><span>Vergunt, zonder dubbele toets</span></div>
 </div>
-<span style="font-size: 14px; color: #676D71;">[Rollenkaart-infographic van de vormgever]</span>
 </section>
 
 <section id="vragen" class="sec">
 <h2 class="h2">Veelgestelde vragen</h2>
 <div>
 <details open><summary>Blijft de kwaliteitsborger nodig bij een volledige EKV?</summary><p>Onder de huidige regels wel: de verklaring van de kwaliteitsborger blijft vereist. Een proces zonder kwaliteitsborger vraagt een wijziging van het Bbl.</p></details>
-<details><summary>Welke BRL's zijn geregistreerd?</summary><p>[Lijst na afstemming met TloKB]</p></details>
+<details><summary>Welke BRL's zijn geregistreerd?</summary><p>Het register van de Toelatingsorganisatie Kwaliteitsborging Bouw (TloKB) geeft het actuele overzicht van aangewezen beoordelingsrichtlijnen en erkende kwaliteitsverklaringen. We werken aan een overzicht van richtlijnen voor complete woningconcepten.</p></details>
 <details><summary>Hoe verhoudt de EKV zich tot de Wkb?</summary><p>De EKV past binnen de Wet kwaliteitsborging voor het bouwen: ze maakt aantoonbaar wat al geborgd is, zodat de keten daar op kan bouwen.</p></details>
 </div>
 </section>
@@ -139,8 +137,8 @@ details p{font-size:17px;line-height:1.6;margin-top:10px}
 <section id="contact-cer" style="background: #E5F4FC; padding: 36px; display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center;">
 <div style="display: flex; flex-direction: column; gap: 10px;">
 <h2 style="font-size: 26px; font-weight: 700; color: #1D1D1B;">Denk mee over de keten</h2>
-<p style="font-size: 17px; line-height: 1.6;">We zoeken CI's en kwaliteitsborgers die willen meedenken over BRL's, capaciteit en het begrippenkader.</p>
-<span style="font-size: 15px; color: #4A5054;">Contactpersoon: [naam], [e-mailadres]</span>
+<p style="font-size: 17px; line-height: 1.6;">We zoeken CI's en schemabeheerders die willen meedenken over richtlijnen voor complete woningen, capaciteit en het begrippenkader.</p>
+<span style="font-size: 15px; color: #4A5054;">Vragen? Gebruik het contactformulier; we zorgen dat je bij de juiste collega terechtkomt.</span>
 </div>
 <a href="contact.html?onderwerp=keten" class="btn">Neem contact op</a>
 </section>
@@ -151,43 +149,39 @@ details p{font-size:17px;line-height:1.6;margin-top:10px}
 <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 48px;">
 <div style="display: flex; flex-direction: column; gap: 12px;">
 <span style="font-size: 20px; font-weight: 700; color: #009EE0;">EKV Fast Lane</span>
-<p style="margin: 0; color: #4A5054;">Onderdeel van de Versneller Type- en Systeemgoedkeuring, binnen het programma Innovatie en Opschaling Woningbouw van De Bouwcampus.</p>
+<p style="margin: 0; color: #4A5054;">Sneller bouwen met erkende kwaliteitsverklaringen.</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px;">
 <span style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #676D71;">Voor wie</span>
-<a href="gemeenten.html" style="color: #1D1D1B; text-decoration: none;">Gemeenten</a>
+<a href="certificering.html" style="color: #1D1D1B; text-decoration: none;">Certificerende instellingen</a>
 <a href="conceptaanbieders.html" style="color: #1D1D1B; text-decoration: none;">Conceptaanbieders &amp; bouwers</a>
-<a href="certificering.html" style="color: #1D1D1B; text-decoration: none;">CI's &amp; kwaliteitsborgers</a>
-<a href="opdrachtgevers.html" style="color: #1D1D1B; text-decoration: none;">Opdrachtgevers</a>
+<a href="opdrachtgevers.html" style="color: #1D1D1B; text-decoration: none;">Woningcorporaties &amp; ontwikkelaars</a>
+<a href="gemeenten.html" style="color: #1D1D1B; text-decoration: none;">Gemeenten</a>
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px;">
 <span style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #676D71;">Over</span>
+<a href="samen-versnellen.html" style="color: #1D1D1B; text-decoration: none;">Samen versnellen</a>
 <a href="achtergrond.html" style="color: #1D1D1B; text-decoration: none;">Wat is de EKV Fast Lane?</a>
 <a href="achtergrond.html" style="color: #1D1D1B; text-decoration: none;">Kennisbank</a>
-<a href="achtergrond.html" style="color: #1D1D1B; text-decoration: none;">Nieuws</a>
+<a href="vouchers.html" style="color: #1D1D1B; text-decoration: none;">Stimuleringsregeling (vouchers)</a>
+<a href="index.html#nieuwsbrief" style="color: #1D1D1B; text-decoration: none;">Nieuwsbrief</a>
 <a href="https://debouwcampus.nl" style="color: #1D1D1B; text-decoration: none;">De Bouwcampus</a>
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px;">
 <span style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #676D71;">Contact</span>
-<span>[e-mailadres team EKV Fast Lane]</span>
-<span>[telefoonnummer]</span>
+<span>Team EKV Fast Lane, De Bouwcampus</span>
 <a href="contact.html" style="color: #0072A8; font-weight: 700; text-decoration: none;">Contactformulier</a>
 <a href="index.html#nieuwsbrief" style="color: #0072A8; font-weight: 700; text-decoration: none;">Aanmelden voor de nieuwsbrief</a>
 </div>
 </div>
 <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #E5E5E5; padding-top: 20px; font-size: 14px; color: #676D71;">
-<span>[logo's partners: BZK · VNG · PZH · Gemeente Rotterdam · …]</span>
+<div style="display: flex; align-items: center; gap: 20px; max-width: 760px;"><img src="img-iop-logo.png" alt="Programma Innovatie en Opschaling Woningbouw" style="height: 56px; width: auto; flex: none;"><span style="line-height: 1.5;">EKV Fast Lane is onderdeel van het Programma Innovatie en Opschaling Woningbouw (IOP) van het ministerie van Volkshuisvesting en Ruimtelijke Ordening en wordt uitgevoerd door De Bouwcampus. <a href="samen-versnellen.html" style="color: #0072A8; font-weight: 700; text-decoration: none;">Samen versnellen</a></span></div>
 <div style="display: flex; gap: 24px;">
-<a href="#" style="color: #676D71;">Privacyverklaring</a>
-<a href="#" style="color: #676D71;">Toegankelijkheid</a>
-<a href="#" style="color: #676D71;">Colofon</a>
+<a href="privacy.html" style="color: #676D71;">Privacyverklaring</a>
+<a href="https://debouwcampus.nl" style="color: #676D71;">De Bouwcampus</a>
 </div>
 </div>
 </footer></div>
 </div>
-<form name="opmerkingen" data-netlify="true" netlify-honeypot="bot-field" hidden>
-<input name="bot-field"><input name="naam"><input name="pagina"><input name="onderdeel"><textarea name="opmerking"></textarea><input name="tijd"><input name="id">
-</form>
-<script src="opmerkingen.js"></script>
 </body>
 </html>
